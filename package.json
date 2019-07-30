@@ -1,8 +1,8 @@
 {
-  "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.61",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "crosx",
+  "description": "Iwgx personal blog",
+  "version": "1.0.0",
+  "author": "Ilham Wahabi <iwgx.github.io>",
   "dependencies": {
     "gatsby": "2.13.41",
     "gatsby-plugin-manifest": "2.2.4",
@@ -21,7 +21,8 @@
     "gatsby",
     "tailwind",
     "tailwindcss",
-    "purgecss"
+    "purgecss",
+    "typescript"
   ],
   "license": "MIT",
   "scripts": {
@@ -58,10 +59,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind"
+    "url": "https://github.com/iwgx/crosx"
   },
   "bugs": {
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/iwgx/crosx/issues"
   },
   "publishConfig": {
     "access": "public"
