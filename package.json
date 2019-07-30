@@ -28,15 +28,20 @@
   "scripts": {
     "analyze:lint": "eslint --ext .tsx --ext .ts --ext .js .",
     "analyze:prettier": "prettier --check '**/*.{tsx,ts,js,css,md,json}'",
-    "analyze": "npm run analyze:lint && npm run analyze:prettier",
+    "analyze": "yarn analyze:lint && yarn analyze:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
-    "fix": "npm run fix:lint && npm run fix:prettier",
-    "start": "npm run develop",
+    "fix": "yarn fix:lint && yarn fix:prettier",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn analyze"
+    }
   },
   "devDependencies": {
     "@types/node": "^12.6.8",
@@ -55,6 +60,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-react-hooks": "1.6.1",
+    "husky": "^3.0.2",
     "prettier": "^1.18.2",
     "tailwindcss": "1.0.5",
     "typescript": "3.5.3"
