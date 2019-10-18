@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <h5 className="text-xl">
       a blog by{' '}
@@ -10,5 +10,3 @@ const Footer = () => {
     </h5>
   );
 };
-
-export default Footer;

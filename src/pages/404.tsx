@@ -1,12 +1,11 @@
 import React from 'react';
 
-import SEO from '../components/seo';
+import { SEO } from '../components/seo';
 
 function NotFoundPage() {
   return (
     <>
       <SEO title="404" keywords={[`iwgx`, `404`, `blog`]} />
-
       <div>
         <p>404</p>
       </div>

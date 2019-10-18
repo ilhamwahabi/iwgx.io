@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+export const Header = () => {
   return (
     <section>
       <h1 className="text-6xl leading-none">CrosX</h1>
@@ -8,5 +8,3 @@ const Header = () => {
     </section>
   );
 };
-
-export default Header;

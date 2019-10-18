@@ -14,7 +14,7 @@ interface IAllBlogsQuery {
   };
 }
 
-const AllBlogs = () => {
+export const AllBlogs = () => {
   const data: IAllBlogsQuery = useStaticQuery(graphql`
     {
       allContentfulBlog {
@@ -34,10 +34,12 @@ const AllBlogs = () => {
     <section className="flex-1 py-8 md:w-2/4 self-center">
       {data.allContentfulBlog.edges.map((node, index) => {
         const { title, excerpt } = node.node;
-        const pageUrl = `post/${title
+
+        const slug = title
           .toLowerCase()
           .split(' ')
-          .join('-')}`;
+          .join('-');
+        const pageUrl = `post/${slug}`;
 
         return (
           <Link className="block mb-4" key={index} to={pageUrl}>
@@ -49,5 +51,3 @@ const AllBlogs = () => {
     </section>
   );
 };
-
-export default AllBlogs;
