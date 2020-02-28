@@ -43,9 +43,9 @@ export const AllBlogs = () => {
         const pageUrl = `post/${slug}`;
 
         return (
-          <div>
-            <Link className="block mb-4" key={index} to={pageUrl}>
-              <h2 className="text-2xl font-bold">{title}</h2>
+          <div className="bg-white mb-4 py-4 px-6 border-l-4 border-primary shadow-lg">
+            <Link className="block" key={index} to={pageUrl}>
+              <h2 className="text-2xl font-bold mb-2">{title}</h2>
               <p className="text-base">{excerpt.excerpt}</p>
             </Link>
           </div>
