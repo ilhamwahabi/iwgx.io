@@ -3,9 +3,9 @@ import { graphql } from 'gatsby';
 
 import { SEO } from '../components/seo';
 
-import { renderRichText } from '../utils/post/renderRichText';
-import { renderTopics } from '../utils/post/renderTopics';
-import { renderDate } from '../utils/post/renderDate';
+import { renderRichText } from '../utils/blog/renderRichText';
+import { renderTopics } from '../utils/blog/renderTopics';
+import { renderDate } from '../utils/blog/renderDate';
 
 const BlogPost = ({ data }) => {
   const { title, topics, createdAt, updatedAt, banner, content } = data.contentfulBlog;

@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       // Resolve the paths to our template
-      const postTemplate = path.resolve('./src/templates/post.tsx');
+      const blogTemplate = path.resolve('./src/templates/blog.tsx');
 
       // Then for each result we create a page.
       result.data.allContentfulBlog.edges.forEach(edge => {
@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         createPage({
           path: `/post/${slug}/`,
-          component: slash(postTemplate),
+          component: slash(blogTemplate),
           context: {
             id,
           },
