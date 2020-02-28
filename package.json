@@ -50,7 +50,7 @@
   "lint-staged": {
     "*.{tsx,ts,js,css,md,json}": [
       "yarn fix",
-      "git add"
+      "git add ."
     ]
   },
   "devDependencies": {
