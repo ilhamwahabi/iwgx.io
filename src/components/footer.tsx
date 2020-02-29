@@ -14,7 +14,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white p-12 border-t border-gray-300 flex flex-col items-center">
+    <footer className="bg-quarternary p-12 border-t border-gray-300 flex flex-col items-center">
       <div className="w-full md:w-1/3 lg:w-1/6 flex justify-around">
         {icons.map(({ icon, url }, index) => (
           <a href={url} target="_blank" rel="noopener noreferrer" key={index}>
