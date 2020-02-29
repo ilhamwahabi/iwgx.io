@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `CrosX`,
-    description: `iwgx personal blog`,
+    title: `iwgx`,
+    description: `a blog by Ilham Wahabi`,
     author: `@ilhamwahabigx`,
   },
   plugins: [
@@ -13,8 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `CrosX by iwgx`,
-        short_name: `crosx`,
+        name: `iwgx`,
+        short_name: `iwgx`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,

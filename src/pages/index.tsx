@@ -7,13 +7,13 @@ import { Footer } from '../components/footer';
 
 function IndexPage() {
   return (
-    <main className="bg-quarternary text-primary min-h-screen py-8 px-12 flex flex-col">
+    <main className="bg-quarternary text-primary">
       <SEO title="Home" keywords={[`iwgx`, `home`, `blog`]} />
-      <section className="flex flex-col justify-between flex-1">
+      <section className="py-8 px-12 min-h-screen flex flex-col">
         <Header />
         <AllBlogs />
-        <Footer />
       </section>
+      <Footer />
     </main>
   );
 }
