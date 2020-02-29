@@ -40,7 +40,7 @@ export const AllBlogs = () => {
           .toLowerCase()
           .split(' ')
           .join('-');
-        const pageUrl = `post/${slug}`;
+        const pageUrl = `blog/${slug}`;
 
         return (
           <div className="bg-white mb-4 py-4 px-6 border-l-4 border-primary shadow-lg" key={index}>

@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
           .join('-');
 
         createPage({
-          path: `/post/${slug}/`,
+          path: `/blog/${slug}/`,
           component: slash(blogTemplate),
           context: {
             id,
