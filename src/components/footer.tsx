@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faReddit, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
-  { icon: faFacebookF, url: 'https://www.facebook.com/wahabi.gx' },
-  { icon: faTwitter, url: 'https://twitter.com/ilhamwahabigx' },
-  { icon: faLinkedin, url: 'https://www.linkedin.com/in/ilham-wahabi' },
-  { icon: faReddit, url: 'https://www.reddit.com/user/ilhamwahabi' },
-  { icon: faGithub, url: 'https://github.com/iwgx' },
+  { icon: faFacebookF, label: 'facebook', url: 'https://www.facebook.com/wahabi.gx' },
+  { icon: faTwitter, label: 'twitter', url: 'https://twitter.com/ilhamwahabigx' },
+  { icon: faLinkedin, label: 'linkedin', url: 'https://www.linkedin.com/in/ilham-wahabi' },
+  { icon: faReddit, label: 'reddit', url: 'https://www.reddit.com/user/ilhamwahabi' },
+  { icon: faGithub, label: 'github', url: 'https://github.com/iwgx' },
 ];
 
 export const Footer = () => {
@@ -16,8 +16,8 @@ export const Footer = () => {
   return (
     <footer className="bg-quarternary p-12 border-t border-gray-300 flex flex-col items-center">
       <div className="w-full md:w-1/3 lg:w-1/6 flex justify-around">
-        {icons.map(({ icon, url }, index) => (
-          <a href={url} target="_blank" rel="noopener noreferrer" key={index}>
+        {icons.map(({ icon, label, url }, index) => (
+          <a href={url} target="_blank" rel="noopener noreferrer" key={index} aria-label={label}>
             <FontAwesomeIcon className="text-xl" icon={icon} />
           </a>
         ))}
