@@ -1,9 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faReddit, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faReddit, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
-  { icon: faFacebookF, label: 'facebook', url: 'https://www.facebook.com/wahabi.gx' },
   { icon: faTwitter, label: 'twitter', url: 'https://twitter.com/ilhamwahabigx' },
   { icon: faLinkedin, label: 'linkedin', url: 'https://www.linkedin.com/in/ilham-wahabi' },
   { icon: faReddit, label: 'reddit', url: 'https://www.reddit.com/user/ilhamwahabi' },
