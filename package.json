@@ -1,5 +1,5 @@
 {
-  "name": "crosx",
+  "name": "iwgx",
   "description": "iwgx personal blog",
   "version": "1.0.0",
   "author": "Ilham Wahabi <iwgx.github.io>",
@@ -81,10 +81,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iwgx/crosx"
+    "url": "https://github.com/iwgx/blog"
   },
   "bugs": {
-    "url": "https://github.com/iwgx/crosx/issues"
+    "url": "https://github.com/iwgx/blog/issues"
   },
   "publishConfig": {
     "access": "public"
