@@ -3,15 +3,15 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 interface ISeoProps {
-  description: string;
-  lang: string;
-  meta: { name: string; content: string }[];
-  keywords: string[];
   title: string;
+  description: string;
+  lang?: string;
+  meta?: { name: string; content: string }[];
+  keywords?: string[];
 }
 
 export const SEO = (props: ISeoProps) => {
-  const { description, lang = 'en', meta = [], keywords = [], title } = props;
+  const { title, description, lang = 'en', meta = [], keywords = [] } = props;
 
   return (
     <StaticQuery

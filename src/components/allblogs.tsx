@@ -32,7 +32,7 @@ export const AllBlogs = () => {
 
   return (
     <section className="flex-1 py-8 xl:w-2/4 self-center">
-      <h2 className="text-3xl mb-4 font-bold mb-2">Blog</h2>
+      <h2 className="text-3xl mb-4 font-bold">Blog</h2>
       {data.allContentfulBlog.edges.map(node => {
         const { title, excerpt } = node.node;
 
