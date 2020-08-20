@@ -12,6 +12,7 @@
     "dayjs": "^1.8.34",
     "gatsby": "2.24.47",
     "gatsby-plugin-manifest": "2.4.23",
+    "gatsby-plugin-no-javascript": "^2.0.5",
     "gatsby-plugin-offline": "3.2.23",
     "gatsby-plugin-postcss": "2.3.11",
     "gatsby-plugin-purgecss": "5.0.0",
