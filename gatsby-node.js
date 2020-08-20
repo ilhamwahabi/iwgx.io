@@ -18,7 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `,
   )
-    .then(result => {
+    .then((result) => {
       if (result.errors) {
         console.log('Error retrieving contentful data', result.errors);
       }
@@ -27,12 +27,9 @@ exports.createPages = ({ graphql, actions }) => {
       const blogTemplate = path.resolve('./src/templates/blog.tsx');
 
       // Then for each result we create a page.
-      result.data.allContentfulBlog.edges.forEach(edge => {
+      result.data.allContentfulBlog.edges.forEach((edge) => {
         const { id, title } = edge.node;
-        const slug = title
-          .toLowerCase()
-          .split(' ')
-          .join('-');
+        const slug = title.toLowerCase().split(' ').join('-');
 
         createPage({
           path: `/blog/${slug}/`,
@@ -43,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
         });
       });
     })
-    .catch(error => {
+    .catch((error) => {
       console.log('Error retrieving contentful data', error);
     });
 };

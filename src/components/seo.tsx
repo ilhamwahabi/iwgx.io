@@ -16,7 +16,7 @@ export const SEO = (props: ISeoProps) => {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription = description || data.site.siteMetadata.description;
         return (
           <Helmet
