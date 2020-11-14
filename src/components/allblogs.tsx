@@ -37,7 +37,7 @@ export const AllBlogs = () => {
         const { title, excerpt } = node.node;
 
         const slug = title.toLowerCase().split(' ').join('-');
-        const pageUrl = `blog/${slug}`;
+        const pageUrl = `${slug}`;
 
         return (
           <Link to={pageUrl} key={slug}>

@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
         const slug = title.toLowerCase().split(' ').join('-');
 
         createPage({
-          path: `/blog/${slug}/`,
+          path: `/${slug}/`,
           component: slash(blogTemplate),
           context: {
             id,
