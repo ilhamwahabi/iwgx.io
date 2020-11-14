@@ -10,10 +10,10 @@ function IndexPage() {
     <main className="bg-quarternary text-primary">
       <SEO
         title="Blog by iwgx"
-        description="A writing by Ilham Wahabi about frontend, startup, ITB, etc"
+        description="A writing by Ilham Wahabi about frontend, startup, ITB, dll"
         keywords={[`iwgx`, `home`, `blog`]}
       />
-      <section className="py-8 px-12 min-h-screen flex flex-col">
+      <section className="py-8 px-12 min-h-screen flex flex-col container mx-auto">
         <Header />
         <AllBlogs />
       </section>

@@ -13,9 +13,9 @@ const BlogPost = ({ data }) => {
   const { title, topics, createdAt, updatedAt, banner, content, excerpt } = data.contentfulBlog;
 
   return (
-    <>
+    <div className="bg-quarternary">
       <SEO title={title} keywords={topics} description={excerpt.excerpt} lang="en" meta={[]} />
-      <main className="bg-quarternary text-primary min-h-screen py-8 px-12">
+      <main className="text-primary min-h-screen py-8 px-12 container mx-auto">
         <Header />
         <div className="blogpost flex flex-col py-8 md:w-2/3 lg:w-3/5 xl:w-2/4 m-auto">
           <h2 className="text-2xl md:text-4xl text-center font-bold mb-8">{title}</h2>
@@ -38,7 +38,7 @@ const BlogPost = ({ data }) => {
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
