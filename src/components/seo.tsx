@@ -24,7 +24,6 @@ export const SEO = (props: ISeoProps) => {
               lang,
             }}
             title={title}
-            titleTemplate={`${data.site.siteMetadata.title} | %s`}
             meta={[
               {
                 name: `description`,
