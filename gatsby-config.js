@@ -48,6 +48,5 @@ module.exports = {
         delayTimeout: 0,
       },
     },
-    'gatsby-plugin-no-javascript', // make sure it is included last in the plugins array.
   ],
 };
