@@ -6,9 +6,6 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@contentful/rich-text-types": "^14.1.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "dayjs": "^1.8.34",
     "gatsby": "2.24.47",
     "gatsby-plugin-manifest": "2.4.23",
@@ -23,7 +20,8 @@
     "graphql": "15.3.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-helmet": "6.1.0"
+    "react-helmet": "6.1.0",
+    "react-icons": "^4.2.0"
   },
   "keywords": [
     "gatsby",
