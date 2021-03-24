@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `iwgx`,
-    description: `a blog by Ilham Wahabi`,
+    title: `Ilham Wahabi`,
+    description: `a personal website by iwgx`,
     author: `@ilhamwahabigx`,
   },
   plugins: [

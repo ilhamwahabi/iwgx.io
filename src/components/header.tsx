@@ -6,18 +6,11 @@ export const Header = () => {
     <section>
       <h1 className="text-6xl leading-none">
         <Link to="/" className="text-6xl leading-none">
-          blog
+          iwgx
         </Link>
-        <span className="ml-2 text-3xl">
-          {' by '}
-          <a href="https://iwgx.io" target="_blank" rel="noreferrer">
-            iwgx
-          </a>
-        </span>
       </h1>
-
       <h5 className="text-xl mt-2">
-        <span>frontend, startup, ITB, dll</span>
+        <span>frontend, startup, ITB, etc</span>
       </h5>
     </section>
   );
