@@ -1,10 +1,6 @@
-// See https://next.tailwindcss.com/docs/configuration for details
-
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./src/**/*.tsx'],
-  },
+  purge: ['./src/**/*.{tsx}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -16,6 +12,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [],
 };

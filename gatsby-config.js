@@ -22,14 +22,7 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    `gatsby-plugin-postcss`,
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        tailwind: true,
-        purgeOnly: ['src/css/style.css'],
-      },
-    },
+    'gatsby-plugin-postcss',
     `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     {
