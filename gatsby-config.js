@@ -49,5 +49,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-no-javascript',
+    {
+      resolve: `gatsby-plugin-splitbee`,
+      options: {
+        includeInDevelopment: false,
+        delayTimeout: 0,
+      },
+    },
   ],
 };
