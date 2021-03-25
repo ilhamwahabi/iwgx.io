@@ -10,6 +10,9 @@ module.exports = {
         quarternary: '#F7F7F7',
         quinary: '#C8CDD0',
       },
+      minHeight: {
+        6: '1.5rem',
+      },
     },
   },
   variants: {
