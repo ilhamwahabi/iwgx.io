@@ -19,7 +19,10 @@ Open here https://iwgx.io
 CONTENTFUL_ACCESS_TOKEN=**************
 CONTENTFUL_HOST=**********
 CONTENTFUL_SPACE_ID=******
+ENABLE_GATSBY_REFRESH_ENDPOINT=true
 ```
+
+with `ENABLE_GATSBY_REFRESH_ENDPOINT` set to true, it's enable us to refresh data without having to restart development server. To refresh the data, just open `http://localhost:8000/___graphql` and click "Refresh Data" button.
 
 2. Install dependencies `yarn install`
 3. Run it `yarn start`
