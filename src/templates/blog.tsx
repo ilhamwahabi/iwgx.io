@@ -18,7 +18,7 @@ const BlogPost = ({ data }) => {
       <main className="text-primary min-h-screen py-8 px-12 container mx-auto">
         <Header />
         <div className="blogpost flex flex-col py-8 md:w-2/3 lg:w-3/5 xl:w-2/4 m-auto">
-          <h2 className="text-2xl md:text-4xl text-center font-bold mb-8">{title}</h2>
+          <h2 className="text-2xl md:text-4xl text-center font-bold mb-8 leading-loose">{title}</h2>
           <img src={banner.file.url} alt="banner" className="w-full md:w-3/5 mb-16 m-auto" />
           <div className="mb-4 py-4 border-t border-b border-gray-300 text-base md:text-lg">
             <p className="mb-2 flex items-start">
@@ -34,7 +34,7 @@ const BlogPost = ({ data }) => {
               <span className="ml-2">{renderTopics(topics)}</span>
             </p>
           </div>
-          <div className="leading-relaxed text-base md:text-lg">{renderRichText(content.json)}</div>
+          <div className="leading-relaxed text-base md:text-lg pt-4">{renderRichText(content.json)}</div>
         </div>
       </main>
       <Footer />
