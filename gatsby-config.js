@@ -48,5 +48,6 @@ module.exports = {
         delayTimeout: 0,
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
   ],
 };
