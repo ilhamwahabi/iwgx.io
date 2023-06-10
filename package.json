@@ -7,7 +7,7 @@
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@contentful/rich-text-types": "^14.1.1",
     "dayjs": "^1.10.4",
-    "gatsby": "^3.1.2",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-gatsby-cloud": "^2.1.0",
     "gatsby-plugin-manifest": "^3.1.0",
     "gatsby-plugin-offline": "^4.1.0",
